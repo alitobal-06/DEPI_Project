@@ -1,4 +1,154 @@
-button {
+body {
+    background-color: #f7fcf7;
+    text-align: center;
+}
+
+.navbar {
+    border-bottom: 1px solid #E5E8EB;
+    height: 65px;
+    background-color: #ffffff !important;
+    padding: 12px 40px;
+}
+
+.navBtn {
     width: 84px;
     height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+#signUp {
+    background-color: #79B931;
+}
+
+#login {
+    background-color: #EDF2E8;
+}
+
+#btnDiv {
+    width: 176px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #141C0D;
+    padding: 0px !important;
+}
+
+.navLinks {
+    width: 211px;
+    gap: 36px;
+}
+
+.navList {
+    width: 211px;
+    justify-content: space-between;
+}
+
+#loginForm {
+    width: 526px;
+    gap: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0D1C0D;
+}
+
+h2 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #0D1C0D;
+}
+
+input {
+    width: 448px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #D1E8D1;
+    padding: 15px;
+    background: none;
+}
+
+input::placeholder {
+    color: #75964F;
+}
+
+.outer {
+    height: 112px;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+#submit {
+    background-color: #79B931;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #141C0D;
+    height: 40px;
+    padding: 0%;
+}
+
+.formLinks {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #75964F;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#cwg {
+    background-color: #E8F2E8;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #141C0D;
+    width: 448px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+i {
+    margin-right: 10px;
 }
