@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up | KhedmaNow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7fcf7;
+            text-align: center;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #signUpForm {
+            width: 526px;
+            max-width: 95%;
+            margin: 60px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 28px;
+            color: #0D1C0D;
+        }
+
+        input,
+        select {
+            width: 100%;
+            height: 56px;
+            border-radius: 8px;
+            border: 1px solid #D1E8D1;
+            padding: 15px;
+            font-size: 14px;
+            background-color: #f7fcf7;
+            /* نفس لون الخلفية */
+        }
+
+        input::placeholder {
+            color: #75964F;
+        }
+
+        .d-flex-row {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .d-flex-row input {
+            width: 100%;
+            /* كل بوكس بنفس عرض باقي الحقول */
+        }
+
+        #submit {
+            background-color: #79B931;
+            font-weight: 700;
+            font-size: 14px;
+            color: #141C0D;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #cwg {
+            background-color: #E8F2E8;
+            font-weight: 700;
+            font-size: 14px;
+            color: #141C0D;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #cwg i {
+            margin-right: 10px;
+        }
+
+        .formLinks {
+            font-weight: 400;
+            font-size: 14px;
+            color: #75964F;
+            text-decoration: none;
+            padding: 10px 0;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="signUpForm">
+        <h1>Create Your Account</h1>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Phone Number" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <input type="text" placeholder="Location" required>
+
+        <select required>
+            <option>Sign up as: Customer / Service Provider</option>
+            <option>Customer</option>
+            <option>Service Provider</option>
+        </select>
+
+        <input type="text" placeholder="Years of Experience">
+        <select>
+            <option>Service Category</option>
+        </select>
+
+        <div class="d-flex-row">
+            <input type="text" placeholder="Hourly Rate">
+            <input type="text" placeholder="Minimum Charge">
+        </div>
+
+        <input type="text" placeholder="Service Area">
+
+        <input type="submit" value="Sign Up" id="submit">
+        <button id="cwg">
+            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.5 9C18.5002 13.3747 15.3546 17.116 11.0448 17.8669C6.73497 18.6178 2.50942 16.1608 1.03014 12.0437C-0.449138 7.92669 1.24636 3.34222 5.04851 1.17843C8.85067 -0.985358 13.6581 -0.101661 16.4422 3.27281C16.6245 3.47796 16.6802 3.76631 16.5874 4.02461C16.4946 4.28291 16.2682 4.46989 15.997 4.51211C15.7258 4.55433 15.4532 4.44505 15.2862 4.22719C13.0117 1.46926 9.1068 0.700036 5.95621 2.38926C2.80563 4.07849 1.28521 7.75659 2.32346 11.1774C3.36172 14.5981 6.67002 16.8106 10.228 16.4637C13.786 16.1168 16.6046 13.3069 16.9625 9.75H9.5C9.08579 9.75 8.75 9.41421 8.75 9C8.75 8.58579 9.08579 8.25 9.5 8.25H17.75C18.1642 8.25 18.5 8.58579 18.5 9Z"
+                    fill="#0D1C0D" />
+            </svg>
+            &nbsp;&nbsp;
+            Continue with Google
+        </button>
+        <a href="#" class="formLinks">Already have an account? Login</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
