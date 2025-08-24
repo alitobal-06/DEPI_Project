@@ -1,0 +1,105 @@
+:root{
+  --green:#2E7D32;
+  --green-dark:#1B5E20;
+  --beige:#FAF9F6;
+  --beige-2:#F5F5DC;
+  --text:#333;
+  --muted:#6b7280;
+  --radius:16px;
+  --shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+/* الجسم */
+body{ 
+  background:var(--beige); 
+  color:var(--text); 
+  font-family:'Cairo',sans-serif; 
+}
+
+/* الهيدر */
+.page-hero{
+  background: linear-gradient(180deg, rgba(46,125,50,.08), rgba(245,245,220,.6));
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.page-title{
+  font-family:'Playfair Display',serif;
+  font-weight:900;
+  color:var(--green);
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  line-height:1.1;
+  margin:.75rem 0 .25rem;
+  letter-spacing:-0.6px;
+}
+.page-sub{ 
+  color:var(--muted); 
+  font-size:1.05rem; 
+  font-family:'Cairo',sans-serif; 
+}
+
+/* الكارد */
+.service-card{
+  border:none;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease;
+  display:flex;
+  flex-direction:column;
+}
+.service-card:hover{ 
+  transform: translateY(-6px); 
+  box-shadow:0 12px 30px rgba(0,0,0,.12); 
+}
+.service-img{
+  height:180px; 
+  width:100%; 
+  object-fit:cover;
+}
+.card-body{
+  padding:1rem 1rem 1.1rem;
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.service-title{
+  font-family:'Poppins',sans-serif;
+  color:var(--green);
+  font-size:1.2rem;
+  font-weight:700;
+  margin-bottom:.35rem;
+  letter-spacing:0.3px;
+}
+.service-desc{
+  font-family:'Cairo',sans-serif;
+  color:#4b5563;
+  font-size:.95rem;
+  line-height:1.55;
+  flex-grow:1;
+}
+.service-meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.75rem;
+  margin-top:.8rem;
+}
+.providers{
+  font-family:'Cairo',sans-serif;
+  color:#6b7280;
+  font-size:.92rem;
+}
+.price{
+  font-family:'Montserrat',sans-serif;
+  color:var(--green-dark);
+  font-weight:700;
+  font-size:1.05rem;
+  letter-spacing:0.4px;
+}
+.grid{ row-gap:1.5rem }
+/*  علشان الانجلش بس تأكيد أن النصوص جوه الكارد تبدأ من الشمال */
+.service-card .card-body {
+  text-align: left;
+  direction: ltr;
+}
