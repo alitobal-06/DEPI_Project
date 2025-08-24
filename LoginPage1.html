@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhedmaNow - Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #198754;
+            --dark-green: #157347;
+            --light-green: #dcfce7;
+            --text-dark: #292524;
+            --text-gray: #6b7280;
+            --bg-light: #f9fafb;
+            --ink:#44403C;
+            --brand:var(--primary-green)
+        }
+
+        body {
+            margin: 0;
+          font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+            background-color: #f5fbf5;
+            color: var(--text-dark);
+        }
+
+        
+       a{
+        text-decoration:none
+    }
+
+
+    .navbar{
+        background:#fff;
+         box-shadow:0 1px 0 rgba(0,0,0,.06)
+        }
+
+
+    .navbar-brand{
+        font-weight:800;
+         color:var(--brand);
+        }
+
+
+    .nav-link{
+        color:var(--ink); 
+        font-weight:600;
+    }
+
+    .nav-link:hover{
+        color:var(--brand)
+    }
+
+     .first:hover
+        {
+            background-color: #F0FDF4 !important;
+          
+        }
+        
+        .sec:focus{
+            background-color: #0f8a3d !important;
+            color: #fff !important;
+        }
+        .bttn-outline-brand{
+        border:1px solid var(--brand);
+         color:var(--brand)
+        }
+
+
+    .bttn-outline-brand:hover{
+        background:var(--brand);
+         color:#fff
+        }
+
+    .bttn-brand{
+        background:var(--brand) !important; 
+        color:#fff
+    }
+
+    .bttn-brand:hover{
+        background:var(--dark-green) !important;
+         color:#fff
+        }
+
+        .btn {
+            padding: 7px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .signup-btn {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .login-btn {
+            background: #f0f7f0;
+            color: #222;
+        }
+
+        /* Centered Form */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+
+        .form-box {
+            text-align: center;
+            width: 340px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #D1E8D1;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            color: #222;
+        }
+
+        input::placeholder {
+            color: #75964F;
+        }
+
+        .login-main-btn {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .login-main-btn:hover {
+            background: var(--dark-green);
+        }
+
+        .forgot {
+            display: block;
+            margin-top: 10px;
+            color: #75964F;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .google-btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #e2e8e2;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #0a0a0a;
+        }
+
+        .google-btn img {
+            width: 18px;
+            height: 18px;
+        }
+
+        .signup-text {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #75964F;
+        }
+
+        .signup-text a {
+            text-decoration: none;
+            color: #75964F;
+        }
+
+        /* Footer */
+        .footer {
+            background: #292524;
+            color: #d1d5db;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer .footer-brand {
+            color: var(--primary-green);
+            font-weight: 800;
+            font-size: 1.35rem;
+            font-style: italic;
+        }
+
+        .footer .footer-brand span {
+            color: #d1d5db;
+        }
+
+        .footer .footer-link {
+            color: #9ca3af;
+            text-decoration: none;
+            display: block;
+            margin: .35rem 0;
+        }
+
+        .footer .footer-link:hover {
+            color: var(--primary-green);
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #d1d5db;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            color: #292524;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background: var(--primary-green);
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <div>
+        <!--   <img style="width: 100px;height: 70px;" src="Untitled_design-removebg-preview.png" alt="">--> 
+      <a style="width: 80px;" class="navbar-brand" href="#">Khedma<span class="text-dark">Now</span></a>
+        </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Services/Services/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <a class="btn bttn first px-4" href="#">Login</a>
+          <a class="btn bttn-brand sec btn-brand px-4" href="./SignUpPage.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Login Form -->
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Welcome Back</h2>
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="login-main-btn">Login</button>
+                <a href="#" class="forgot">Forgot Password?</a>
+
+                <button type="button" class="google-btn">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4_38)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18 10.3143C18.0002 13.9599 15.3788 17.0777 11.7873 17.7034C8.1958 18.3292 4.67452 16.2817 3.44178 12.8508C2.20905 9.41991 3.62197 5.59951 6.79043 3.79636C9.95889 1.9932 13.9651 2.72961 16.2852 5.54167C16.4371 5.71263 16.4835 5.95293 16.4062 6.16817C16.3289 6.38342 16.1401 6.53924 15.9141 6.57442C15.6881 6.60961 15.461 6.51854 15.3219 6.33699C13.4264 4.03872 10.1723 3.39769 7.54684 4.80539C4.92136 6.21308 3.65434 9.27815 4.51955 12.1288C5.38476 14.9794 8.14168 16.8232 11.1067 16.5341C14.0717 16.245 16.4205 13.9034 16.7188 10.9393H10.5C10.1548 10.9393 9.875 10.6595 9.875 10.3143C9.875 9.96915 10.1548 9.68933 10.5 9.68933H17.375C17.7202 9.68933 18 9.96915 18 10.3143Z"
+                                fill="#0D1C0D" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_4_38">
+                                <rect width="20" height="20" fill="white" transform="translate(0.5 0.314331)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Continue with Google
+                </button>
+
+                <p class="signup-text">Don’t have an account? <a href="#">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-brand">Khedma<span>Now</span></div>
+                    <p>Your trusted platform for finding reliable service professionals in your area.</p>
+                    <div class="d-flex gap-2">
+                        <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-2">Services</h6>
+                    <a class="footer-link" href="#">Home Cleaning</a>
+                    <a class="footer-link" href="#">Plumbing</a>
+                    <a class="footer-link" href="#">Electrical</a>
+                    <a class="footer-link" href="#">Beauty Services</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-2">Company</h6>
+                    <a class="footer-link" href="#">About Us</a>
+                    <a class="footer-link" href="#">How It Works</a>
+                    <a class="footer-link" href="#">Careers</a>
+                    <a class="footer-link" href="#">Contact</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-2">Support</h6>
+                    <a class="footer-link" href="#">Help Center</a>
+                    <a class="footer-link" href="#">Safety</a>
+                    <a class="footer-link" href="#">Terms of Service</a>
+                    <a class="footer-link" href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <hr class="border-secondary-subtle my-4" />
+            <div class="text-center">© 2025 KhedmaNow. All rights reserved.</div>
+        </div>
+    </footer>
+
+
+    <script>
+        
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
