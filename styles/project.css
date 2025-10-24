@@ -1,0 +1,123 @@
+
+    :root{
+      --brand:#15803D;         
+      --brand-dark:#0f8a3d;
+      --ink:#44403C;          
+      --muted:#57534E;         
+      --surface:#ffffff;
+      --bg:#f7f9fb;            
+    }
+
+    body{
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+         background:var(--bg); 
+         color:#292524;
+        }
+
+
+    a{
+        text-decoration:none
+    }
+
+
+    .navbar{
+        background:#fff;
+         box-shadow:0 1px 0 rgba(0,0,0,.06)
+        }
+
+
+    .navbar-brand{
+        font-weight:800;
+         color:var(--brand);
+        }
+
+
+    .nav-link{
+        color:var(--ink); 
+        font-weight:600
+    }
+
+    .nav-link:hover{
+        color:var(--brand)
+    }
+
+
+    .btn-outline-brand{
+        border:1px solid var(--brand);
+         color:var(--brand)
+        }
+
+
+    .btn-outline-brand:hover{
+        background:var(--brand);
+         color:#fff
+        }
+
+    .btn-brand{
+        background:var(--brand); 
+        color:#fff
+    }
+
+
+    .btn-brand:hover{
+        background:var(--brand-dark);
+         color:#fff
+        }
+
+        .first:hover
+        {
+            background-color: #F0FDF4 !important;
+          
+        }
+        
+        .sec:focus{
+            background-color: #0f8a3d !important;
+            color: #fff !important;
+        }
+
+    .hero{
+      background:linear-gradient(180deg, #eaf6ef 0%, rgba(234,246,239,0) 100%);
+      padding:72px 0 56px;
+      border-bottom:2px solid #e5e7eb;
+    }
+
+
+    .hero h1{
+        font-weight:900; 
+        line-height:1.1;
+    }
+
+
+    .hero h1 .accent{
+        color:var(--brand)
+    }
+
+    .search-box{
+      background:#fff; 
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+      padding:12px;
+      gap:12px;
+    }
+   .input-group input{
+       
+        height: 50px;
+        border-radius: 7px;
+        box-shadow: none;
+    }
+    input:focus {
+        box-shadow: none !important;
+    outline: none ; 
+    outline: 2px solid #15803D; 
+}
+
+    .con:hover,
+    .con:focus{
+        border-color: #0f8a3d;
+    }
+
+    .more{
+         cursor: pointer;
+    }
+  
+   

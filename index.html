@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KhedmaNow - Find Trusted Services Near You</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/project.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <div>
+        <a style="width: 80px;" class="navbar-brand" href="#">Khedma<span class="text-dark">Now</span></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <ul class="navbar-nav align-items-lg-center">
+          <a class="btn bttn first px-4" href="./pages/login.html">Login</a>
+
+            <a class="btn bttn-brand sec btn-brand px-4" href="./pages/signup.html">Sign Up</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-9">
+          <h1 class="display-5 mb-3">
+            Find Trusted <span class="accent">Services</span><br />Near You
+          </h1>
+          <p class="text-muted mb-4">
+            Connect with verified professionals for all your home and personal service needs.
+            Quality guaranteed, convenience delivered.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="search-box d-flex flex-column flex-md-row align-items-stretch align-items-md-center mx-auto"
+        style="max-width:920px">
+        <div class="input-group">
+          <span class="input-group-text bg-white border-0">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.7812 13.8438C16.0625 14.1562 16.0625 14.625 15.75 14.9062L14.875 15.7812C14.5938 16.0938 14.125 16.0938 13.8125 15.7812L10.7188 12.6875C10.5625 12.5312 10.5 12.3438 10.5 12.1562V11.625C9.375 12.5 8 13 6.5 13C2.90625 13 0 10.0938 0 6.5C0 2.9375 2.90625 0 6.5 0C10.0625 0 13 2.9375 13 6.5C13 8.03125 12.4688 9.40625 11.625 10.5H12.125C12.3125 10.5 12.5 10.5938 12.6562 10.7188L15.7812 13.8438ZM6.5 10.5C8.6875 10.5 10.5 8.71875 10.5 6.5C10.5 4.3125 8.6875 2.5 6.5 2.5C4.28125 2.5 2.5 4.3125 2.5 6.5C2.5 8.71875 4.28125 10.5 6.5 10.5Z"
+                fill="#A8A29E" />
+            </svg>
+
+          </span>
+          <input class="form-control con " type="text" placeholder="What service do you need?" />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text bg-white border-0">
+            <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.375 15.6875C0.8125 9.125 0 8.4375 0 6C0 2.6875 2.65625 0 6 0C9.3125 0 12 2.6875 12 6C12 8.4375 11.1562 9.125 6.59375 15.6875C6.3125 16.125 5.65625 16.125 5.375 15.6875ZM6 8.5C7.375 8.5 8.5 7.40625 8.5 6C8.5 4.625 7.375 3.5 6 3.5C4.59375 3.5 3.5 4.625 3.5 6C3.5 7.40625 4.59375 8.5 6 8.5Z"
+                fill="#A8A29E" />
+            </svg>
+
+          </span>
+          <input class="form-control con" type="text" placeholder=" Enter your location" />
+        </div>
+        <button class="sec btn btn-brand  px-4 py-2">Search Services</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Services -->
+  <section class="py-5" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Popular Services</h2>
+      <p class="section-subtitle reveal">Choose from our wide range of professional services</p>
+
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card ">
+            <div class="service-icon"><i class="fas fa-broom"></i></div>
+            <div class="service-title">Cleaning</div>
+            <div class="service-subtitle">Home & Office</div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-wrench"></i></div>
+            <div class="service-title">Plumbing</div>
+            <div class="service-subtitle">Repairs & Installation</div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card ">
+            <div class="service-icon"><i class="fas fa-bolt"></i></div>
+            <div class="service-title">Electrical</div>
+            <div class="service-subtitle">Wiring & Fixtures</div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card ">
+            <div class="service-icon"><i class="fas fa-scissors"></i></div>
+            <div class="service-title">Beauty</div>
+            <div class="service-subtitle">Hair & Spa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <!-- 5 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="service-title">Tutoring</div>
+            <div class="service-subtitle">Academic Support</div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card ">
+            <div class="service-icon"><i class="fas fa-truck"></i></div>
+            <div class="service-title">Delivery</div>
+            <div class="service-subtitle">Fast & Reliable</div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="service-card ">
+            <div class="service-icon"><i class="fas fa-laptop"></i></div>
+            <div class="service-title">IT Support</div>
+            <div class="service-subtitle">Tech Solutions</div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <a href="./pages/services.html" style="text-decoration: none; color: inherit;">
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-plus"></i></div>
+              <div class="service-title">More</div>
+              <div class="service-subtitle">View All Services</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Services -->
+  <section class="featured-services py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Featured Services</h2>
+      <p class="section-subtitle">
+        Top-rated service providers chosen for their exceptional quality and reliability
+      </p>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 card-hover">
+            <div class="position-relative">
+              <img src="./images/home/Professional cleaning service.svg" class="card-img-top" alt="Cleaning">
+              <span class="badge bg-success position-absolute top-0 start-0 m-2">Cleaning</span>
+              <span class="badge bg-light text-dark position-absolute top-0 end-0 m-2">
+                ⭐ 4.9
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <img src="./images/home/provider1.jpeg" class="rounded-circle me-2 profile-img" alt="Sarah">
+                <h5 class="card-title mb-0">Sarah's Cleaning Co.</h5>
+              </div>
+              <p class="small text-muted mb-2">
+                Starting from <span class="fw-bold text-success">$25</span>
+              </p>
+              <p class="card-text text-muted small">
+                Professional deep cleaning with eco-friendly products. Transform your home today.
+              </p>
+              <div class="d-flex justify-content-between small text-muted mb-3">
+                <span><span class="fw-bold text-success">500+</span>Jobs completed</span>
+                <span><span class="fw-bold text-success">15</span> min Avg response</span>
+              </div>
+              <a href="#" class="btn btn-success w-100">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 card-hover">
+            <div class="position-relative">
+              <img src="./images/home/plumpingSerivse.jpeg" class="card-img-top" alt="Plumbing">
+              <span class="badge bg-success position-absolute top-0 start-0 m-2">Plumbing</span>
+              <span class="badge bg-light text-dark position-absolute top-0 end-0 m-2">
+                ⭐ 4.8
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <img src="./images/home/provider2.jpeg" class="rounded-circle me-2 profile-img" alt="Ahmed">
+                <h5 class="card-title mb-0">Ahmed's Plumbing</h5>
+              </div>
+              <p class="small text-muted mb-2">
+                Starting from <span class="fw-bold text-success">$35</span>
+              </p>
+              <p class="card-text text-muted small">
+                Expert plumbing solutions with 10+ years experience. Available for emergencies.
+              </p>
+              <div class="d-flex justify-content-between small text-muted mb-3">
+                <span><span class="fw-bold text-success">350+</span>Jobs completed</span>
+                <span><span class="fw-bold text-success">30</span> min Avg response</span>
+              </div>
+              <a href="#" class="btn btn-success w-100">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 h-100 card-hover">
+            <div class="position-relative">
+              <img src="./images/home/electrical service.svg" class="card-img-top" alt="Electrical">
+              <span class="badge bg-success position-absolute top-0 start-0 m-2">Electrical</span>
+              <span class="badge bg-light text-dark position-absolute top-0 end-0 m-2">
+                ⭐ 5.0
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <img src="./images/home/provider3.jpeg" class="rounded-circle me-2 profile-img" alt="ElectriPro">
+                <h5 class="card-title mb-0">ElectriPro Services</h5>
+              </div>
+              <p class="small text-muted mb-2">
+                Starting from <span class="fw-bold text-success">$40</span>
+              </p>
+              <p class="card-text text-muted small">
+                Licensed electrician specializing in smart home installations and repairs.
+              </p>
+              <div class="d-flex justify-content-between small text-muted mb-3">
+                <span><span class="fw-bold text-success">280+</span>Jobs completed</span>
+                <span><span class="fw-bold text-success">45</span> min Avg response</span>
+              </div>
+              <a href="#" class="btn btn-success  w-100">Book Now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section class="py-5" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Trusted by thousands of satisfied customers</p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="testimonial-head">
+              <img class="avatar" src="./images/home/customer1.jpeg" alt="Sarah" />
+              <div>
+                <div class="fw-bold">Sarah Johnson</div>
+                <div class="small-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="quote text-muted">"Amazing service! The cleaning team was professional, thorough, and left my
+              house spotless. Will definitely book again."</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="testimonial-head">
+              <img class="avatar" src="./images/home/customer2.jpeg" alt="Mike" />
+              <div>
+                <div class="fw-bold">Mike Chen</div>
+                <div class="small-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="quote text-muted">"Fixed my plumbing issue in no time! The technician was knowledgeable and the
+              pricing was fair. Highly recommended."</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="testimonial-head">
+              <img class="avatar" src="./images/home/customer3.jpeg" alt="Emma" />
+              <div>
+                <div class="fw-bold">Emma Davis</div>
+                <div class="small-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="quote text-muted">"The mobile beauty service was fantastic! Professional, convenient, and great
+              results. Perfect for busy schedules."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-brand">Khedma<span>Now</span></div>
+          <p>Your trusted platform for finding reliable service professionals in your area.</p>
+          <div class="d-flex gap-2">
+            <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-2">Services</h6>
+          <a class="footer-link" href="#">Home Cleaning</a>
+          <a class="footer-link" href="#">Plumbing</a>
+          <a class="footer-link" href="#">Electrical</a>
+          <a class="footer-link" href="#">Beauty Services</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-2">Company</h6>
+          <a class="footer-link" href="./pages/about.html">About Us</a>
+          <a class="footer-link" href="#">How It Works</a>
+          <a class="footer-link" href="#">Careers</a>
+          <a class="footer-link" href="./pages/contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-2">Support</h6>
+          <a class="footer-link" href="#">Help Center</a>
+          <a class="footer-link" href="#">Safety</a>
+          <a class="footer-link" href="#">Terms of Service</a>
+          <a class="footer-link" href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <hr class="border-secondary-subtle my-4" />
+      <div class="text-center">© 2025 KhedmaNow. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
