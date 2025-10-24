@@ -113,42 +113,29 @@ h2 {
     font-weight: bold;
 }
 
-.vision, .mission {
-    border-top: 1px solid #e5e8eb;
-}
-
-.vision {
+.mail, .tel {
     margin-left: 12px;
+    gap: 10px;
 }
 
-.vision h1, .mission h1 {
-    font-size: 14px;
-    font-weight: normal;
-    color: #79B931;
-}
-
-.vision p, .mission p {
-    font-size: 14px;
-    /* text-align: justify; */
-}
-
-.valueRow {
-    padding: 0 12px;
-}
-
-.value p {
-    margin: 0 9px 0 0;
-    
-}
-
-.value {
-    border: 2px solid #79B931;
+.mail i, .tel i {
+    width: 48px;
+    height: 48px;
+    background-color: #F5EDE8;
+    text-align: center;
+    align-content: center;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 15px 15px;
-    font-weight: bold;  
+}
+
+.mail h1, .tel h1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mail a, .tel a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #79B931;
 }
 
 #exploreServices {
@@ -163,6 +150,82 @@ h2 {
 
 #exploreServices:hover {
     background-color: #5a8826;
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-box {
+  text-align: start;
+  width: 448px;
+}
+
+h2 {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #79B931;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  color: #222;
+}
+
+input::placeholder {
+  color: #79B931;
+}
+
+.login-main-btn {
+  width: 131px;
+  padding: 12px;
+  background: #79B931;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.login-main-btn:hover {
+  background: var(--primary-green);
+}
+
+.accordion-item {
+    background-color: transparent !important;
+    border: 1px solid #79B931 !important;
+    border-radius: 8px;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1C120D !important;
+}
+
+.accordion-body {
+    font-size: 14px;
+    font-weight: normal;
+    color: #79B931;
 }
 
 /* Footer */
