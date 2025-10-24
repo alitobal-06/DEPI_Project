@@ -1,0 +1,210 @@
+:root {
+  --primary-green: #198754;
+  --dark-green: #157347;
+  --light-green: #dcfce7;
+  --text-dark: #292524;
+  --text-gray: #6b7280;
+  --bg-light: #f9fafb;
+  --ink: #44403c;
+  --brand: var(--primary-green);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background-color: #f5fbf5;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.nav-link {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--brand);
+}
+
+.first:hover {
+  background-color: #f0fdf4 !important;
+}
+
+.sec:focus {
+  background-color: #0f8a3d !important;
+  color: #fff !important;
+}
+.bttn-outline-brand {
+  border: 1px solid var(--brand);
+  color: var(--brand);
+}
+
+.bttn-outline-brand:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.bttn-brand {
+  background: var(--brand) !important;
+  color: #fff;
+}
+
+.bttn-brand:hover {
+  background: var(--dark-green) !important;
+  color: #fff;
+}
+
+.btn {
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.signup-btn {
+  background: var(--primary-green);
+  color: white;
+}
+
+.login-btn {
+  background: #f0f7f0;
+  color: #222;
+}
+
+.aboutContent {
+    padding: 0px 12%;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+h1 span {
+    font-size: 36px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #79B931;
+}
+
+.description {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.vision, .mission {
+    border-top: 1px solid #e5e8eb;
+}
+
+.vision {
+    margin-left: 12px;
+}
+
+.vision h1, .mission h1 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #79B931;
+}
+
+.vision p, .mission p {
+    font-size: 14px;
+    /* text-align: justify; */
+}
+
+.valueRow {
+    padding: 0 12px;
+}
+
+.value p {
+    margin: 0 9px 0 0;
+    
+}
+
+.value {
+    border: 2px solid #79B931;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 15px 15px;
+    font-weight: bold;  
+}
+
+#exploreServices {
+    background-color: #79B931;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #79B931;
+    padding: 10px 15px;
+}
+
+#exploreServices:hover {
+    background-color: #5a8826;
+}
+
+/* Footer */
+.footer {
+  background: #292524;
+  color: #d1d5db;
+  padding: 3rem 0 1rem;
+}
+
+.footer .footer-brand {
+  color: var(--primary-green);
+  font-weight: 800;
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+.footer .footer-brand span {
+  color: #d1d5db;
+}
+
+.footer .footer-link {
+  color: #9ca3af;
+  text-decoration: none;
+  display: block;
+  margin: 0.35rem 0;
+}
+
+.footer .footer-link:hover {
+  color: var(--primary-green);
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background: #d1d5db;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #292524;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: var(--primary-green);
+}
