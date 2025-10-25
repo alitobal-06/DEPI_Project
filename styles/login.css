@@ -169,6 +169,10 @@ input::placeholder {
   color: #0a0a0a;
 }
 
+.google-btn:hover {
+  background: #c7ccc7;
+}
+
 .google-btn img {
   width: 18px;
   height: 18px;
