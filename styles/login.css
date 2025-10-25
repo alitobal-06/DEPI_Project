@@ -152,6 +152,10 @@ input::placeholder {
   text-decoration: none;
 }
 
+.forgot:hover {
+  text-decoration: underline;
+}
+
 .google-btn {
   margin-top: 20px;
   width: 100%;
@@ -170,6 +174,7 @@ input::placeholder {
 }
 
 .google-btn:hover {
+  transition: 0.2s;
   background: #c7ccc7;
 }
 
@@ -188,6 +193,11 @@ input::placeholder {
   text-decoration: none;
   color: #75964f;
 }
+
+.signUp-link:hover {
+  text-decoration: underline;
+}
+
 
 /* Footer */
 .footer {
